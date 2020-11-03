@@ -152,5 +152,33 @@ button {
         display: none;
     }
 
+    .block {
+       display: flex;
+       flex-direction: row;
+    }
+    label[class="cont_label"] {
+        min-width: 25%;
+        padding-top: 20px;
+    }
 
+    input[class="cont_input"] {
+        width: 70%;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .newsletter {
+        justify-content:  left;
+    }
+
+    .newsletter textarea {
+        width: 105%;
+    }
+
+    button {
+        width: 98%;
+        font-size: .9em;;
+    }
 }

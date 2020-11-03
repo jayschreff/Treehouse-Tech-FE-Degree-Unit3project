@@ -21,24 +21,31 @@
                  <h2>Siging up for our newsletter</h2>
                     <p>Get the latest news on how your code is<br class="break"> doing right in your inbox</p>
                 </div>  
-        <form>
+        <form action="index.html" method="post">
             <fieldset class="contact">
                 <legend>Contact Information</legend>
                     <div class="block">
-                        <label for="name">Full Name</label><br>
-                        <input type="text" id="name" name="usr_name" placeholder="Required" required><br>
+                        <label class="cont_label" for="name">Full Name</label><br>
+                        <input class="cont_input" type="text" id="name" name="usr_name" placeholder="Required" required><br>
                     </div>
                     <div class="block">
-                        <label for="email">Email Address</label><br>
-                        <input type="email" id="email" name="usr_email" placeholder="Required" required><br>
+                        <label class="cont_label" for="email">Email Address</label><br>
+                        <input class="cont_input"  type="email" id="email" name="usr_email" placeholder="Required" required><br>
                     </div> 
-                    <label for="phone">Phone Number</label><br>
-                        <input type="tel" id="phone" name="usr_phone"><br>
-                    <label for="street">Street Address</label><br>
-                        <input type="text" id="street" name="street_add"><br>
-                    <label for="city">City</label><br>
-                        <input type="text" id="city" name="city_add"><br>
-                    <label for="state">State</label><br>
+                    <div class="block">
+                        <label class="cont_label" for="phone">Phone Number</label><br>
+                        <input class="cont_input"  type="tel" id="phone" name="usr_phone"><br>
+                    </div>
+                    <div class="block">
+                        <label class="cont_label" for="street">Street Address</label><br>
+                        <input class="cont_input"  type="text" id="street" name="street_add"><br>
+                    </div>
+                    <div class="block">
+                        <label class="cont_label" for="city">City</label><br>
+                        <input class="cont_input"  type="text" id="city" name="city_add"><br>
+                    </div>
+                    <div class="block">
+                        <label class="cont_label" for="state">State</label><br>
                         <select id="state" name="state_add">
                             <option value="">Choose State</option>
                             <option value="AL">Alabama</option>
@@ -93,9 +100,13 @@
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
                         </select><br>
-                    <label for="zip">Zip Code</label><br>
-                        <input class="zip" type="text" id="zip" name="zip_add"><br>
-                        <hr>
+                        </div>
+                        <div class="block">
+                            <label class="cont_label" for="zip">Zip Code</label><br>
+                            <input  class="zip" type="text" id="zip" name="zip_add"><br>
+                         </div>
+                            <hr>
+                    
             </fieldset>
             <fieldset class="newsletter">
               
@@ -115,7 +126,7 @@
                     <p>Other topics you'd like to hear about</p><br>
                         <textarea for="other" height="200px" width="500px"></textarea><br>
                    <div class="button">
-                       <button> Sign Up</button><br>
+                       <button type="submit"> Sign Up</button><br>
                 </div> 
                         <p class="copy">&copy Copyright The Code Review</p>
             </fieldset>
