@@ -141,6 +141,9 @@ button {
     margin-bottom: 150px;
 }
 
+input:focus {
+    background-color: skyblue;
+  }
 
 @media (min-width: 768px) {
     .wrapper {
@@ -184,5 +187,9 @@ button {
 
     .break {
         display: none;
+    }
+
+    input:focus {
+        background-color: skyblue;
     }
 }
